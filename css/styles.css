@@ -1,14 +1,34 @@
 /* ====NORMOLIZING STYLES=================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 a {
   color: inherit;
   text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
 }
 button {
   cursor: pointer;
+  display: block;
+  border: none;
 }
 
 /* ====MAIN STYLES========================= */
@@ -43,11 +63,33 @@ body {
   line-height: 1.2;
   color: #2e2f42;
 }
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
 /* ====HEADER============================= */
 
 .header {
   color: #2e2f42;
+}
+.header a {
+  padding: 24px 0;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+.header_navigation {
+  display: flex;
+}
+.header_logo {
+  margin-right: 76px;
+}
+.header_navigation_list {
+  display: flex;
+  gap: 40px;
 }
 .header_logo_span {
   color: #2e2f42;
@@ -57,6 +99,10 @@ body {
 }
 .header_address {
   font-style: normal;
+}
+.header_address_list {
+  display: flex;
+  gap: 40px;
 }
 .address_list_link {
   color: #434455;
@@ -71,8 +117,15 @@ body {
 /* ====1-HERO=============================== */
 .hero {
   background: #2e2f42;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+.hero_container {
+  padding: 188px 472px;
+}
+
 .hero_title {
+  margin: 0 auto;
   font-size: 56px;
   line-height: 1.07;
   font-weight: 700;
@@ -81,6 +134,8 @@ body {
   color: #ffffff;
 }
 .hero_button {
+  margin: 48px auto 0;
+  padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
