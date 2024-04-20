@@ -88,6 +88,7 @@ body {
 }
 .header_navigation {
   display: flex;
+  align-items: center;
 }
 .header_logo {
   margin-right: 76px;
@@ -122,15 +123,15 @@ body {
 /* ====1-HERO=============================== */
 .hero {
   background: #2e2f42;
-  /* max-width: 1440px; */
+  padding: 188px 0;
   margin: 0 auto;
 }
 .hero_container {
-  padding: 188px 472px;
 }
 
 .hero_title {
   margin: 0 auto;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   font-weight: 700;
@@ -141,12 +142,14 @@ body {
 .hero_button {
   margin: 48px auto 0;
   padding: 16px 32px;
+  min-width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
+  border-radius: 4px;
 }
 .hero_button:hover,
 .hero_button:focus {
@@ -193,17 +196,16 @@ body {
   display: flex;
   gap: 24px;
 }
-
-.team_item_container {
-  padding: 32px 16px;
-  text-align: center;
-}
-
 .team_list_item {
   background: #ffffff;
   width: calc((100%-72px) / 4);
+  border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team_item_container {
+  padding: 32px 0;
+  text-align: center;
 }
 .team_item_title {
   letter-spacing: 0.02em;
@@ -236,12 +238,12 @@ body {
 .footer {
   background: #2e2f42;
   color: #f4f4fd;
-}
-.footer_container {
   padding: 100px 0;
 }
+
 .footer_logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer_logo_span {
   color: #f4f4fd;
